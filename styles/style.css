@@ -11,3 +11,16 @@
 .font-inter{
     font-family: "Inter", sans-serif;
 }
+.banner{
+    
+     max-width: 100%;
+     height: auto;
+
+    
+}
+.banner-text{
+    position: absolute;
+    
+    padding: 20px;
+
+}
