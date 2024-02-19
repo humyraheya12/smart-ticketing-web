@@ -1,7 +1,8 @@
-function next(){
-    // hide and show
-    hideElementById('offer')
-    hideElementById('nav-head');
-    showElementById('success');
-}
+// function next(){
+//     // hide and show all
+//     hideElementById('nav-head');
+//     hideElementById('offer');
+//     showElementById('success-part');
+//     console.log('');
+// }
 
