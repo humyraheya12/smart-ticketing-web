@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    <header>
+    <header class="hidden">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -69,8 +69,8 @@
         </section>
 
        </header>
-  <main>
-
+  <main class="">
+<section class="hidden">
     <!-- best offer -->
     <section class="container mx-auto px-4 mt-24">
       <h2 class="raleway-font text-center text-4xl font-bold mb-12">Best Offers for you</h2>
@@ -112,20 +112,20 @@
           <button class="btn btn-outline btn-success">See All Offers</button>
       </div>
   </section>
-<!-- booking section -->
+
      <!-- booking section -->
      <section id="booking-section" class="bg-gray-100 rounded-t-[80px] border-t-4 border-[#1DD100]">
       <h2 class="text-center raleway-font font-bold text-4xl pt-24 mb-6">PH Express</h2>
-      <p class="text-center mb-12">Embark on your next adventure! Secure your seat, explore new horizons, and create memories that last a lifetime. Book now!</p>
+      <p class="text-center mb-12">Select the preferred date and time for your journey. Different buses may have varying schedules, so choose the one that suits your travel plans.</p>
       <div class="container mx-auto px-4">
           <div class="grid grid-cols-12 bg-white rounded-3xl mb-7">
               <div class="col-span-9 py-12">
                   <div class="border-r-2 border-[#1DD100] border-dashed px-12">
                       <div class="flex justify-between mb-6">
                           <div class="flex">
-                              <img src="./utilities/images/bus-logo.png" alt="" class="w-18 h-14">
+                              <img src="images/bus-logo.png" alt="" class="w-18 h-14">
                               <div class="ml-4">
-                                  <h2 class="raleway-font text-3xl font-bold">Greenline Paribahan</h2>
+                                  <h2 class="font-raleway text-3xl font-bold">Greenline Paribahan</h2>
                                   <p class="font-inter">Coach-009-WEB AC_BUSINESS</p>
                               </div>
                           </div>
@@ -134,41 +134,41 @@
 
                       <div class="bg-gray-100 rounded-lg p-6">
                           <div class="flex justify-between border-b-2 border-slate-300 border-dashed pb-3 mb-4">
-                              <p class="raleway-font">Route</p>
-                              <p class="raleway-font font-bold">Dhaka-Sylhet</p>
+                              <p class="font-raleway">Route</p>
+                              <p class="font-raleway font-bold">Dhaka-Sylhet</p>
                           </div>
                           <div class="flex justify-between border-b-2 border-slate-300 border-dashed pb-3 mb-4">
-                              <p class="raleway-font">Departure Time</p>
-                              <p class="raleway-font font-bold">9.00 pm</p>
+                              <p class="font-raleway">Departure Time</p>
+                              <p class="font-raleway font-bold">9.00 pm</p>
                           </div>
                           <div class="flex justify-between">
-                              <button class="btn btn-active inter-font">Boarding point - Laxmipur</button>
-                              <button class="btn btn-active inter-font">Dropping point - Bogura</button>
-                              <button class="btn btn-active inter-font">Est. time - 11 hr</button>
+                              <button class="btn btn-active font-inter">Boarding point - Laxmipur</button>
+                              <button class="btn btn-active font-inter">Dropping point - Bogura</button>
+                              <button class="btn btn-active font-inter">Est. time - 11 hr</button>
                           </div>
                       </div>
                   </div>
               </div> 
               <div class="col-span-3 flex justify-center items-center">
                   <div>
-                      <img src="./utilities/images/fare.png" alt="" class="mx-auto mb-4">
-                      <h2 class="raleway-font font-bold text-2xl text-center mb-2">550 Taka</h2>
+                      <img src="images/fare.png" alt="" class="mx-auto mb-4">
+                      <h2 class="font-raleway font-bold text-2xl text-center mb-2">550 Taka</h2>
                       <h3 class="raleway-font text-center text-lg font-semibold text-gray-500">Per Seat</h3>
                   </div>
               </div>
           </div>
-         <!-- booking -->
+         <!-- booking part -->
          <div class="grid grid-cols-12 bg-white rounded-3xl py-12">
           <div class="col-span-7 px-12 border-r-2 border-[#1DD100] border-dashed">
               <h3 class="raleway text-2xl font-semibold border-b-2 border-slate-300 border-dashed pb-3 mb-4">Select Your Seat</h3>
               <div class="flex justify-between border-b-2 border-slate-300 border-dashed pb-3 mb-4">
                   <div class="flex items-center">
-                      <img src="./utilities/images/seat-gray.png" alt="" class="mr-2">
+                      <img src="images/seat-gray.png" alt="" class="mr-2">
                       <p class="text-gray-500 font-semibold raleway-font">Available</p>
                   </div>
                   <div class="flex items-center">
-                      <img src="./utilities/images/seat-green-filled.png" alt="" class="mr-2">
-                      <p class="text-[#1DD100] font-semibold raleway-font"><img src="images/seat-green-filled.png" alt="">Selected</p>
+                      <img src="images/seat-green-filled.png" alt="" class="mr-2">
+                      <p class="text-[#1DD100] font-semibold raleway-font">Selected</p>
                   </div>
               </div>
               
@@ -193,34 +193,34 @@
                   </div>
                   </div>             
           <!-- row 1 -->
-          <div class="col-span-5 px-12">
-            <h3 class="raleway text-2xl font-semibold border-b-2 border-slate-300 border-dashed pb-3 mb-4">Complete Your Booking</h3>
+          <div class="col-span-5 px-12 ">
+            <h3 class="font-raleway text-2xl font-semibold border-b-2 border-slate-300 border-dashed pb-3 mb-4">Complete Your Booking</h3>
             <div class="bg-gray-100 rounded-lg p-6 mb-4">
                 <div class="overflow-x-auto">
                     <table class="table">
                         <!-- head -->
-                        <thead class="border-b-2 border-slate-300 border-dashed pb-3">
-                            <tr class="inter-font font-black text-base">
-                                <th>Name<span class="indicator-item badge text-white bg-[#1DD100] ml-1">2</span></th>
+                        <thead class="border-b-2 border-slate-300 border-dashed pb-2">
+                            <tr class="font-inter font-black text-base">
+                                <th>Name<span class="indicator badge text-white bg-[#1DD100] ml-1">2</span></th>
                                 <th>Class</th>
                                 <th>Price</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- row 1 -->
-                            <tr class="inter-font text-base">
+                            <!-- row -->
+                            <tr class="font-inter text-base">
                                 <td>B1</td>
                                 <td>Economy</td>
                                 <td>550</td>
                             </tr>
-                            <!-- row 2 -->
-                            <tr class="inter-font text-base">
+                            <!-- row -->
+                            <tr class="font-inter text-base">
                                 <td>B2</td>
                                 <td>Economy</td>
                                 <td>550</td>
                             </tr>
                         </tbody>
-                        <!-- footer -->
+                        <!-- last -->
                         <tfoot>
                             <tr class="inter-font font-bold text-base">
                               <td colspan="2">Total</td>
@@ -229,7 +229,7 @@
                           </tfoot>
                     </table>
                 </div>
-                <div class="flex mb-5">
+                <div class="grid grid-cols-1 lg:flex mb-5">
                     <input type="text" placeholder="Have any coupon?" class="input w-full max-w-xs" />
                     <button class="btn bg-[#1DD100] text-white">Apply</button>
                 </div>
@@ -268,9 +268,29 @@
 </div>
 </section>
                   
+</section>
+<!-- success part -->
+ <section class="hidden">
 
-
- 
+   <div class="bg-slate-300 w-full min-h-screen flex justify-center items-center">
+    <div class="w-[718px] h-[481px] bg-[#FFFFFF]">
+        <div class="card-body items-center text-center">
+            <img src="images/success.png" alt="">
+          <h2 class="text-[#27AE60] text-3xl font-bold font-roboto">SUCCESS</h2>
+          <p class="text-[#4A4A4A] font-medium">Thank you for Booking Our Bus Seats. 
+            We are working hard to find the best service and deals for you. 
+            </p>
+            <p class="#4A4A4A font-light">Shortly you will find a confirmation in your email.</p>
+          <div class="card-actions">
+            <button class="btn bg-[#27AE60] text-white rounded-lg w-[300px]">Continue</button>
+            
+          </div>
+        </div>
+      </div>
+   </div>
+ </section>
     </main>
+
+    <script src="scripts/ticket.js"></script>
 </body>
 </html>
