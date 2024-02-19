@@ -100,7 +100,7 @@
                       </div> 
                       <div class="divider lg:divider-horizontal">Offer</div> 
                       <div class="grid flex-grow h-32 card rounded-box place-items-center">
-                          <h2 class="text-3xl raleway-font font-bold">Couple20</h2>
+                          <h2 class="text-3xl raleway-font font-bold">Couple 20</h2>
                           <p class="text-lg inter-font font-medium">Coupon Code</p>
                       </div>
                   </div>
@@ -299,7 +299,7 @@
     <script src="scripts/utility.js"></script>
     <script src="scripts/ticket.js"></script>
     <script>
-        // JavaScript code for seat selection and coupon discount
+        // seat selection and coupon discount
         document.addEventListener("DOMContentLoaded", function() {
             const seatButtons = document.querySelectorAll("#seat-grid button");
             const totalElement = document.getElementById("total");
@@ -344,11 +344,12 @@
                 const couponCode = couponValueInput.value.trim().toUpperCase();
                 let discountPercentage = 0;
 
-                if (couponCode === "NEW15") {
-                    discountPercentage = 15;
-                } else if (couponCode === "Couple 20") {
-                    discountPercentage = 20;
-                }
+                if (couponCode.toUpperCase().replace(/\s/g, "") === "NEW15") {
+    discountPercentage = 15;
+} else if (couponCode.toUpperCase().replace(/\s/g, "") === "COUPLE20") {
+    discountPercentage = 20;
+}
+
 
                 const discountAmount = (totalAmount * discountPercentage) / 100;
                 const grandTotal = totalAmount - discountAmount;
