@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    <header class="hidden">
+    <header id="nav-head" class="">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -70,7 +70,7 @@
 
        </header>
   <main class="">
-<section class="hidden">
+<section id="offer" class="">
     <!-- best offer -->
     <section class="container mx-auto px-4 mt-24">
       <h2 class="raleway-font text-center text-4xl font-bold mb-12">Best Offers for you</h2>
@@ -171,71 +171,48 @@
                       <p class="text-[#1DD100] font-semibold raleway-font">Selected</p>
                   </div>
               </div>
-              
-              <div class="grid grid-cols-10 gap-x-8 gap-y-4">
-                  <div class="col-span-8"></div>
-                  <button class="btn bg-[#03070F1A] col-span-2 text-[#1DD100]">
-                      <img src="" alt="" class="w-5 h-5">
-                  </button>
-                  <p class="col-span-1">A</p>
-                  <button class="btn px-6 col-span-2">A1</button>
-                  <button class="btn px-6 col-span-2">A2</button>
-                  <div class="col-span-1"></div>
-                  <button class="btn px-6 col-span-2">A3</button>
-                  <button class="btn px-6 col-span-2">A4</button>
-                  
-                  <p class="col-span-1">B</p>
-                  <button class="btn px-6 col-span-2">B1</button>
-                  <button class="btn px-6 col-span-2">B2</button>
-                  <div class="col-span-1"></div>
-                  <button class="btn px-6 col-span-2">B3</button>
-                  <button class="btn px-6 col-span-2">B4</button>
-                  </div>
-                  </div>             
-          <!-- row 1 -->
-          <div class="col-span-5 px-12 ">
-            <h3 class="font-raleway text-2xl font-semibold border-b-2 border-slate-300 border-dashed pb-3 mb-4">Complete Your Booking</h3>
+         
+
+              <div class="grid grid-cols-10 gap-x-8 gap-y-4" id="seat-grid">
+                <div class="col-span-8"></div>
+                <button class="btn bg-[#03070F1A] col-span-2">
+                    <img src="images/Vector.png" alt="" class="w-5 h-5">
+                </button>
+                <div class="bus" id="bus">
+                </div>
+            </div>
+        </div>
+        <div class="col-span-12 lg:col-span-5 px-12">
+            <h3 class="raleway text-2xl font-semibold border-b-2 border-slate-300 border-dashed pb-3 mb-4">Complete Your Booking</h3>
             <div class="bg-gray-100 rounded-lg p-6 mb-4">
                 <div class="overflow-x-auto">
                     <table class="table">
                         <!-- head -->
-                        <thead class="border-b-2 border-slate-300 border-dashed pb-2">
-                            <tr class="font-inter font-black text-base">
-                                <th>Name<span class="indicator badge text-white bg-[#1DD100] ml-1">2</span></th>
+                        <thead class="border-b-2 border-slate-300 border-dashed pb-3">
+                            <tr class="inter-font font-black text-base">
+                                <th>Name<span id="selected-seats" class="indicator-item badge text-white bg-[#1DD100] ml-1">0</span></th>
                                 <th>Class</th>
                                 <th>Price</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <!-- row -->
-                            <tr class="font-inter text-base">
-                                <td>B1</td>
-                                <td>Economy</td>
-                                <td>550</td>
-                            </tr>
-                            <!-- row -->
-                            <tr class="font-inter text-base">
-                                <td>B2</td>
-                                <td>Economy</td>
-                                <td>550</td>
-                            </tr>
+                        <tbody id="table-body">
                         </tbody>
-                        <!-- last -->
+                        <!-- footer -->
                         <tfoot>
                             <tr class="inter-font font-bold text-base">
                               <td colspan="2">Total</td>
-                              <td>BDT <span>550</span></td>
+                              <td>BDT <span id="total">0</span></td>
                             </tr>
                           </tfoot>
                     </table>
                 </div>
-                <div class="grid grid-cols-1 lg:flex mb-5">
-                    <input type="text" placeholder="Have any coupon?" class="input w-full max-w-xs" />
-                    <button class="btn bg-[#1DD100] text-white">Apply</button>
+                <div id="coupon-section" class="flex mb-4">
+                    <input id="coupon-value" type="text" placeholder="Have any coupon?" class="input w-full max-w-xs" />
+                    <button id="coupon-btn" class="btn bg-[#1DD100] text-white">Apply</button>
                 </div>
                 <div class="flex justify-between px-4 inter-font font-bold">
                     <p>Grand Total</p>
-                    <p>BDT <span>1100</span></p>
+                    <p>BDT <span id="grand-total">0</span></p>
                 </div>
             </div>
             <!-- form -->
@@ -244,33 +221,37 @@
                     <div class="label">
                         <span class="label-text font-bold">Passenger Name*</span>
                     </div>
-                    <input type="text" placeholder="Enter your name" class="input w-full" />
+                    <input id="name" type="text" placeholder="Enter your name" class="input w-full" />
                 </label>
 
                 <label class="form-control w-full">
                     <div class="label">
                         <span class="label-text font-bold">Phone Number*</span>
                     </div>
-                    <input type="text" placeholder="Enter your phone number" class="input w-full" />
+                    <input id="phone" type="tel" placeholder="Phone number must be like: (01XXXXXXXXX)" class="input w-full" />
                 </label>
 
                 <label class="form-control w-full">
                     <div class="label">
                         <span class="label-text font-bold">Email</span>
                     </div>
-                    <input type="text" placeholder="Enter your email" class="input w-full" />
+                    <input id="email" type="email" placeholder="Enter your email" class="input w-full" />
                 </label>
 
-                <button class="btn btn-block mt-4 bg-[#1DD100] text-white">Next</button>
+                <label id="next-btn" for="my_modal_6" class="btn btn-block mt-4 bg-[#1DD100] text-white" disabled>Next</label>
+            </div>
+            <div class="flex justify-between mt-4 inter-font">
+                <p class="underline">Terms & Conditions</p>
+                <p class="underline">Cancellation policy</p>
             </div>
         </div>
     </div>
 </div>
-</section>
+
                   
 </section>
 <!-- success part -->
- <section class="hidden">
+ <section id="success" class="hidden">
 
    <div class="bg-slate-300 w-full min-h-screen flex justify-center items-center">
     <div class="w-[718px] h-[481px] bg-[#FFFFFF]">
@@ -290,7 +271,72 @@
    </div>
  </section>
     </main>
-
+     <script src="scripts/utility.js"></script>
     <script src="scripts/ticket.js"></script>
+
+    <script>
+        const busElement = document.getElementById('bus');
+        const rows = ['A', 'B', 'C', 'D'];
+        const columns = [1, 2,];
+        const maxSeatsToSelect = 4;
+        let selectedSeatsCounter = 0;
+        const selectedSeats = [];
+    
+        // Initialize the bus seats
+        for (let row of rows) {
+            for (let column of columns) {
+                const seatName = row + column;
+                const seat = document.createElement('div');
+                seat.classList.add('seat');
+                seat.innerText = seatName;
+                seat.addEventListener('click', () => toggleSeat(seatName));
+                busElement.appendChild(seat);
+            }
+        }
+    
+        function toggleSeat(seatName) {
+            const seatIndex = selectedSeats.indexOf(seatName);
+    
+            if (seatIndex === -1 && selectedSeatsCounter < maxSeatsToSelect) {
+                // Seat not selected, add to selectedSeats array
+                selectedSeats.push(seatName);
+                selectedSeatsCounter++;
+    
+                // Disable the click event for this seat
+                document.querySelectorAll('.seat').forEach(seat => {
+                    if (seat.innerText === seatName) {
+                        seat.removeEventListener('click', () => toggleSeat(seatName));
+                    }
+                });
+            }
+    
+            // Update the UI
+            updateUI();
+        }
+    
+        function updateUI() {
+            const seats = document.querySelectorAll('.seat');
+    
+            seats.forEach(seat => {
+                const seatName = seat.innerText;
+    
+                if (selectedSeats.includes(seatName)) {
+                    seat.classList.add('selected');
+                } else {
+                    seat.classList.remove('selected');
+                }
+            });
+        }
+    
+        function reserveSeats() {
+            if (selectedSeats.length === 0) {
+                alert('Please select at least one seat.');
+            } else {
+                alert(`Reserved seats: ${selectedSeats.join(', ')}`);
+                // You can add logic to send the reservation data to a server here
+            }
+        }
+    </script>
+
 </body>
 </html>
